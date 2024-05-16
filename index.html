@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="slider" id="slider">
+        <div class="slides" id="slides">
+            <img src="img/1.jpg" alt="Slide 1" class="slide active">
+            <img src="img/2.jpg" alt="Slide 2" class="slide">
+            <img src="img/3.jpg" alt="Slide 3" class="slide">
+            <img src="img/4.jpg" alt="Slide 4" class="slide">
+            <img src="img/5.jpg" alt="Slide 5" class="slide">
+            <img src="img/6.jpg" alt="Slide 6" class="slide">
+        </div>
+
+        <div class="controls-container" id="controls-container">
+            <span class="control control-pause" id="pause-btn"><i class="fa fa-pause"></i>
+            </span>
+            <span class="control control-prev" id="prev-btn"><i class="fa fa-angle-left"></i>
+            </span>
+            <span class="control control-next" id="next-btn"><i class="fa fa-angle-right"></i>
+            </span>
+        </div>
+
+        <div class="indicators" id="indicators-container">
+            <div class="indicator active" data-slide-to="0"></div>
+            <div class="indicator" data-slide-to="1"></div>
+            <div class="indicator" data-slide-to="2"></div>
+            <div class="indicator" data-slide-to="3"></div>
+            <div class="indicator" data-slide-to="4"></div>
+            <div class="indicator" data-slide-to="5"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

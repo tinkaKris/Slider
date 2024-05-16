@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+}
+
+.slides {
+  position: relative;
+  height: 725px;
+  padding: 15px 0;
+}
+
+.slide {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.active {
+  opacity: 1;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.indicators,
+.controls-container {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.indicator,
+.control {
+  height: 45px;
+  width: 45px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.indicator.active {
+  background: rgb(199, 20, 20);
+}
