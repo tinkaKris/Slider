@@ -20,12 +20,12 @@ body {
   border: 2px solid black;
   box-sizing: border-box;
   margin: 0 auto;
+  pointer-events: none;
 }
 
 .active {
   opacity: 1;
   z-index: 2;
-  pointer-events: none;
 }
 
 .indicators,
